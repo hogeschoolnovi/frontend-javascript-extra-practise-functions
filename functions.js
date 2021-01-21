@@ -6,7 +6,11 @@
 // "Nova" geeft "Hoi Nova!"
 // "Nick" geeft "Hoi Nick!"
 
+function greet(name) {
+  return "Hoi " + name + "!";
+}
 
+console.log(greet("Nova"));
 
 /* Opdracht 2 */
 // Schrijf een functie die een hoeveelheid minuten verwacht (als een getal) en teruggeeft
@@ -46,6 +50,18 @@
 // ["abra", "cadabra"] geeft "abracadabra"
 // ["a", "b", "c", "d", "e"] geeft "abcde"
 
+function concatenate(wordArray) {
+  let output = "";
+
+  for (let i = 0; i < wordArray.length; i++) {
+    output = output + wordArray[i];
+  }
+
+  return output;
+}
+
+console.log(concatenate(["a", "b", "c"]));
+
 
 
 // -------------------------------  INTERMEDIATE
@@ -75,10 +91,23 @@
 // Schrijf een functie die een string en een letter verwacht. De functie telt hoe vaak die letter voorkomt in
 // de string en geeft dit terug. Je mag hiervoor geen string- of array-methoden gebruiken.
 // ---- Verwachte uitkomsten:
-// "Hans en marietje lopen naar de supermarkt" en "e" geeft 5
+// "Hans en marietje lopen naar de supermarkt" en "e" geeft 6
 // "Hans is zijn mondkapje vergeten" en "a" geeft 2
 
+function howManyTimes(sentence, letter) {
+  let amount = 0;
 
+  for (let i = 0; i < sentence.length; i++) {
+    console.log(sentence[i]);
+    if (sentence[i] === letter) {
+      amount++
+    }
+  }
+
+  return amount;
+}
+
+console.log(howManyTimes("Hans en marietje lopen naar de supermarkt", "e"));
 
 // ------------------------------- ADVANCED
 
@@ -89,7 +118,17 @@
 // lastEntry([3, 6, 9, 17, 4, 6, 25, 4]) geeft 4
 // lastEntry([46, 65, 34, 204, 190, 89], 3) geeft [204, 190, 89]
 
+function lastEntry(array, n) {
+  const lastEntryIndex = array.length - 1;
 
+  if (n === undefined) {
+    return array[lastEntryIndex];
+  }
+  return array.slice(lastEntryIndex - n, lastEntryIndex)
+}
+
+// console.log(lastEntry([3, 6, 9, 17, 4, 6, 25, 4]));
+// console.log(lastEntry([46, 65, 34, 204, 190, 89], 4));
 
 /* Opdracht 10 */
 // Schrijf een functie die een array van getallen verwacht. De functie geeft het hoogste
@@ -98,7 +137,19 @@
 // [3, 6, 9, 17, 4, 6, 25] geeft 25
 // [46, 65, 34, 204, 190, 89] geeft 204
 
+function highest(numbersArray) {
+  let highest = 0;
 
+  for (let i = 0; i < numbersArray.length; i++) {
+    if (highest < numbersArray[i]) {
+      highest = numbersArray[i];
+    }
+  }
+
+  return highest;
+}
+
+// console.log(highest([46, 65, 34, 204, 190, 89]));
 
 /* Opdracht 11 */
 // Schrijf een functie die geen parameters verwacht en de getallen 1 tot 100 print.
@@ -137,3 +188,36 @@
 // 29
 // FizzBuzz
 // etc.
+
+// OPTIE 1, MET OUTPUT VARIABELE
+function fizzBuzzOne() {
+  for (let i = 1; i <= 100; i++) {
+    let output = '';
+
+    if (i % 3 === 0) {
+      output += 'Fizz';
+    }
+    if (i % 5 === 0) {
+      output += 'Buzz';
+    }
+    console.log(output || i);
+  }
+}
+
+// OPTIE 2, MET DIRECTE CONSOLE.LOG()
+function fizzBuzzTwo() {
+  for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log('FizzBuzz');
+    } else if (i % 3 === 0) {
+      console.log('Fizz');
+    } else if (i % 5 === 0) {
+      console.log('Buzz');
+    } else {
+      console.log(i);
+    }
+  }
+}
+
+// console.log(fizzBuzzTwo());
+// console.log(fizzBuzzOne());
