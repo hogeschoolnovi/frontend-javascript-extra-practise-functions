@@ -75,7 +75,7 @@
 // Schrijf een functie die een string en een letter verwacht. De functie telt hoe vaak die letter voorkomt in
 // de string en geeft dit terug. Je mag hiervoor geen string- of array-methoden gebruiken.
 // ---- Verwachte uitkomsten:
-// "Hans en marietje lopen naar de supermarkt" en "e" geeft 5
+// "Hans en marietje lopen naar de supermarkt" en "e" geeft 6
 // "Hans is zijn mondkapje vergeten" en "a" geeft 2
 
 
