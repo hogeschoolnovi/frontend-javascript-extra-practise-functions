@@ -80,7 +80,7 @@
 
 
 
-// ------------------------------- ADVANCED
+// ------------------------------- ADVANCED (optionele bonusopdrachten)
 
 /* Opdracht 9 */
 // Schrijf een functie genaamd lastEntry die de laatste entry van een array teruggeeft.
