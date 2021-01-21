@@ -20,6 +20,10 @@ function example(word) {
 
 // we loggen wat er terugkomt uit de functie in de console
 console.log(example("Koekjes"));
+
+// OF je slaat de uitkomst op in een variabele en stopt dát in de console.log():
+const outcome = example("Koekjes");
+console.log(outcome);
 ```
 
 Om dit in de terminal te zien, gebruik je het commando
