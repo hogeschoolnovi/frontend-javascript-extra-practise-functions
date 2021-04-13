@@ -88,8 +88,8 @@
 // Schrijf een functie die bij iedere aanroep een random string id genereert van 8 tekens. Er mag gebruik gemaakt worden van de volgende karakters:
 // "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
 // ---- Verwachte (mogelijke) uitkomsten:
-// 12345678
-// 12345678
+// iizdX7Ax
+// gajxBhGs
 
 
 
