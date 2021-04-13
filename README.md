@@ -1,33 +1,43 @@
-# Opdrachtbeschrijving
+# Opdracht beschrijving
 
-De oprachten in `functions.js` zijn onverdeelt in beginner, intermediate en advanced. Zorg ervoor dat je de functies altijd een 
-waarde laat teruggeven dit logt in de console.
+Deze opdracht bestaat uit meerdere opdrachtjes om met functies te kunnen oefenen. Om de opdracht te maken kun je de opdracht clonen of downloaden naar jouw eigen computer. De uitwerkingen staan op de branch _uitwerkingen_.
 
-**Doe dit niet:**
+Dit project bevat de volgende bestanden:
+
+1. `functions.js`
+2. `methods.js`
+
+Zorg ervoor dat je de functies **altijd een waarde laat teruggeven**. Dit log je vervolgens in de console.
+
+Dus niet:
 ```javascript
-function example(word) {
-  console.log(word);
+function example() {
+  console.log('Hallo!');
 }
 
-example("Koekjes");
+example();
 ```
 
-**Doe dit wel:**
+Maar wel zo:
+
 ```javascript
-function example(word) {
-  return word;
+function example() {
+  return 'Hallo!';
 }
 
-// we loggen wat er terugkomt uit de functie in de console
-console.log(example("Koekjes"));
+// OF we loggen wat er terugkomt uit de functie in de console
+console.log(example());
 
 // OF je slaat de uitkomst op in een variabele en stopt dát in de console.log():
-const outcome = example("Koekjes");
+const outcome = example();
 console.log(outcome);
 ```
 
-Om dit in de terminal te zien, gebruik je het commando
+## Script runnen
+Als je de code wil runnen kun je dit doen door het volgende in de terminal in te voeren:
 
-`nodemon functions.js` 
+`nodemon functions.js`
 
-om het script in de terminal te runnen.
+Als je wisselt van bestand moet je nodemon eerst stoppen (ctrl + c voor zowel Windows als Mac) en dan opnieuw starten met de nieuwe bestandsnaam, zoals bijvoorbeeld:
+
+nodemon `methods.js`
