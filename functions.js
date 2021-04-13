@@ -51,7 +51,7 @@
 // ---- Verwachte uitkomsten:
 // "Frontend web development" geeft "development"
 // "De eindopdracht telt voor 30 ECTS" geeft "eindopdracht"
-// "Een API staat voor Application Programming Interface. Met deze technologie zul je vaak gaan werken." geeft ????
+// "Een API staat voor Application Programming Interface. Met deze technologie zul je vaak gaan werken." geeft "technologie"
 
 
 // -------------------------------  LEVEL 2
